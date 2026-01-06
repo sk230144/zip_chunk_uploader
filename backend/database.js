@@ -1,4 +1,7 @@
 import { MongoClient } from 'mongodb';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://root:rootpassword@localhost:27017/file_uploader?authSource=admin';
 
